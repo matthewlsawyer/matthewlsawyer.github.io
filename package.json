@@ -1,0 +1,25 @@
+{
+  "name": "matthewlsawyer.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @11ty/eleventy",
+    "start": "npm run build -- --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewlsawyer/matthewlsawyer.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthewlsawyer/matthewlsawyer.github.io/issues"
+  },
+  "homepage": "https://github.com/matthewlsawyer/matthewlsawyer.github.io#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
