@@ -9,7 +9,7 @@ jobs:
       - uses: actions/setup-node@v4
       - name: Build static files
         id: build
-        run: npm build
+        run: npm run build
       - uses: actions/upload-pages-artifact@v3 # pushes to _site/ by default
 
   deploy:
