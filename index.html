@@ -3,19 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./style.css" rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- TODO: Responsive -->
-    <div class="flex h-screen w-full justify-center">
+    <!-- TODO responsive -->
+    <div class="flex justify-center h-screen">
       <div class="content-center">
-        <h1
+        <div
           class="text-5xl font-bold text-center subpixel-antialiased tracking-widest"
         >
           Matthew L. Sawyer
-        </h1>
+        </div>
+        <div class="flex mt-2">
+          <div
+            class="flex-1 border-b-2 text-stone-700 opacity-80 mb-3 mx-2"
+          ></div>
+          <div
+            class="flex-none text-lg tracking-widest text-stone-300 opacity-50 hover:opacity-100"
+          >
+            <a href="/pages/about">more</a>
+          </div>
+          <div
+            class="flex-1 border-b-2 text-stone-700 opacity-80 mb-3 mx-2"
+          ></div>
+        </div>
         <div
-          class="m-auto w-fit relative font-mono text-sm bg-stone-800 mt-10 px-6 pr-14 py-5 rounded-3xl"
+          class="m-auto w-fit relative font-mono text-sm bg-stone-900/80 mt-10 px-6 pr-14 py-5 rounded-3xl"
         >
           <a
             href="https://github.com/matthewlsawyer/matthewlsawyer.github.io"
@@ -62,15 +75,17 @@
                 <span
                   >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
                 ><span>matthewlsawyer</span
-                ><span class="text-emerald-300">@gmail.com</span>
+                ><span class="text-emerald-300">@gmail.com</span
+                ><span>&nbsp;</span>
               </a>
             </div>
           </div>
-        </div>
-        <div
-          class="hidden m-auto mt-96 cursor-pointer hover:animate-none animate-bounce w-10 h-10 content-center text-center bg-gray-700 rounded-full opacity-70 hover:opacity-100"
-        >
-          <span class="text-md font-bold">&darr;</span>
+          <a
+            href="https://www.11ty.dev/"
+            class="block text-xs text-stone-500 mt-5 w-full text-left hover:text-stone-300"
+          >
+            made with 11ty
+          </a>
         </div>
       </div>
     </div>
