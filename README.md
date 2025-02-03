@@ -1,5 +1,5 @@
 ---
-layout: article_layout.njk
+layout: md_layout.njk
 title: README
 ---
 
