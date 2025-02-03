@@ -10,7 +10,7 @@ Github Pages project built on 11ty and hosted on [matthewlsawyer.com](https://ma
 Run the 11ty build and output to `_site`. Use this command as part of the Github Workflow.
 
 ```bash
-npm build
+npm run build
 ```
 
 Run tailwind and 11ty on watch mode.
