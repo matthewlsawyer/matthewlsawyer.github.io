@@ -1,6 +1,15 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@theme {
+  --animate-blink: blink 1.2s steps(2) infinite;
+  @keyframes blink {
+    0% {
+      visibility: hidden;
+    }
+  }
+}
+
 body {
   @apply bg-stone-800 text-white;
 }

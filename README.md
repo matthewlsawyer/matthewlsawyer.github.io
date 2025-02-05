@@ -1,5 +1,5 @@
 ---
-layout: md_layout.njk
+layout: prose_layout.njk
 title: README
 ---
 
