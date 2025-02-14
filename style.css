@@ -2,12 +2,12 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --animate-blink: blink 1.2s steps(2) infinite;
-  @keyframes blink {
-    0% {
-      visibility: hidden;
-    }
-  }
+  --color-amex: #016fd0;
+  --color-linkedin: #0077b5;
+  --color-google-green: #08851b;
+  --color-link: #0000ee;
+  --color-link-visited: #551a8b;
+  --color-link-active: #ff0000;
 }
 
 body {
