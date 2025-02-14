@@ -4,7 +4,9 @@
 @theme {
   --color-amex: #016fd0;
   --color-linkedin: #0077b5;
-  --color-google-green: #08851b;
+  --color-google-red: #bb001b;
+  --color-google-green: #34a853;
+  --color-google-orange: #ea4335;
   --color-link: #0000ee;
   --color-link-visited: #551a8b;
   --color-link-active: #ff0000;
