@@ -34,8 +34,8 @@
               -->
               <p class="text-lg font-semibold mb-2">Linked In</p>
               <p>Staff Software Engineer</p>
-              <p class="text-amex font-bold">American Express</p>
-              <p class="text-white/40 text-sm tracking-wider">Atlanta, GA</p>
+              <p class="text-amex font-semibold">American Express</p>
+              <p class="text-white/40 text-sm tracking-wide">Atlanta, GA</p>
             </div>
           </a>
         </div>
@@ -48,27 +48,37 @@
             class="flex overflow-x-auto"
             href="https://github.com/matthewlsawyer"
           >
-            <i class="flex-none fa-brands fa-github fa-4x text-white"></i>
+            <div class="flex-none relative">
+              <i class="flex-none fa-brands fa-github fa-4x text-white"></i>
+              <img
+                class="h-6 w-6 absolute right-0 top-11"
+                src="https://github.githubassets.com/assets/arctic-code-vault-contributor-default-df8d74122a06.png"
+              />
+            </div>
             <div class="flex-1 ml-4">
               <p class="text-lg font-semibold mb-2">Github</p>
-              <p class="font-mono text-white/40 text-xs mb-2">
-                latest 3 commits:
-              </p>
+              <p class="text-white/40 text-xs mb-2">latest 3 commits:</p>
               <!-- TODO dynamically pull latest 3 commits -->
               <ul class="fa-ul font-mono text-sm !ml-6">
                 <li>
                   <span class="fa-li"
-                    ><i class="fa-solid fa-code-commit"></i></span
+                    ><i
+                      class="fa-solid fa-code-commit text-fuchsia-400"
+                    ></i></span
                   >Clean up 11ty link
                 </li>
                 <li>
                   <span class="fa-li"
-                    ><i class="fa-solid fa-code-commit"></i></span
+                    ><i
+                      class="fa-solid fa-code-commit text-fuchsia-400"
+                    ></i></span
                   >Fix layout
                 </li>
                 <li>
                   <span class="fa-li">
-                    <i class="fa-solid fa-code-commit"></i></span
+                    <i
+                      class="fa-solid fa-code-commit text-fuchsia-400"
+                    ></i></span
                   >Added readme, markdown layout, typography
                 </li>
               </ul>
@@ -79,7 +89,7 @@
         <div class="my-4"></div>
 
         <!-- Latest Posts -->
-        <p class="text-xl font-semibold">Latest Posts</p>
+        <p class="text-xl font-semibold text-stone-500">Latest Posts</p>
         <div class="my-4"></div>
         <div class="rounded-xl bg-stone-900/80 p-4 mt-4 overflow-x-auto">
           <!-- TODO load list of latest posts -->
@@ -89,8 +99,8 @@
           >
             <i class="flex-none fa-solid fa-newspaper mr-2 mt-1.5"></i>
             <div class="flex-1">
-              <p class="text-lg">Test Post 1</p>
-              <p class="text-sm text-white/40 tracking-wider">Feb 3, 2025</p>
+              <p class="text-lg font-semibold">Test Post 1</p>
+              <p class="text-sm text-white/40 tracking-wide">Feb 3, 2025</p>
             </div>
           </a>
           <a
@@ -99,15 +109,15 @@
           >
             <i class="flex-none fa-solid fa-newspaper mr-2 mt-1.5"></i>
             <div class="flex-1">
-              <p class="text-lg">Test Post 2</p>
-              <p class="text-sm text-white/40 tracking-wider">Feb 3, 2025</p>
+              <p class="text-lg font-semibold">Test Post 2</p>
+              <p class="text-sm text-white/40 tracking-wide">Feb 3, 2025</p>
             </div>
           </a>
           <a class="flex items-start" href="/post">
             <i class="flex-none fa-solid fa-newspaper mr-2 mt-1.5"></i>
             <div class="flex-1">
-              <p class="text-lg">Test Post 3</p>
-              <p class="text-sm text-white/40 tracking-wider">Feb 3, 2025</p>
+              <p class="text-lg font-semibold">Test Post 3</p>
+              <p class="text-sm text-white/40 tracking-wide">Feb 3, 2025</p>
             </div>
           </a>
         </div>
@@ -155,7 +165,7 @@
               <div class="flex-1 cursor-pointer">
                 <a
                   href="https://github.com/matthewlsawyer"
-                  class="block pl-2 border-l-4 opacity-80 hover:opacity-100 border-indigo-500 hover:bg-stone-700"
+                  class="block pl-2 border-l-4 border-indigo-500 hover:bg-stone-700"
                 >
                   <i class="fa-brands fa-github w-3"></i>
                   <span class="text-fuchsia-400">var</span
@@ -166,7 +176,7 @@
                 </a>
                 <a
                   href="https://linkedin.com/in/matthewlsawyer"
-                  class="block pl-2 border-l-4 opacity-80 hover:opacity-100 border-indigo-500 hover:bg-stone-700"
+                  class="block pl-2 border-l-4 border-indigo-500 hover:bg-stone-700"
                 >
                   <i class="fa-brands fa-linkedin text-linkedin w-3"></i>
                   <span class="text-fuchsia-400">var</span
@@ -176,7 +186,7 @@
                 </a>
                 <a
                   href="https://x.com/matthewlsawyer"
-                  class="block pl-2 border-l-4 opacity-80 hover:opacity-100 border-indigo-500 hover:bg-stone-700"
+                  class="block pl-2 border-l-4 border-indigo-500 hover:bg-stone-700"
                 >
                   <i class="fa-brands fa-x-twitter w-3"></i>
                   <span class="text-fuchsia-400">var</span
@@ -188,7 +198,7 @@
                 </a>
                 <a
                   href="mailto:matthewlsawyer@gmail.com"
-                  class="block pl-2 border-l-4 opacity-80 hover:opacity-100 border-indigo-500 hover:bg-stone-700"
+                  class="block pl-2 border-l-4 border-indigo-500 hover:bg-stone-700"
                 >
                   <i class="fa-brands fa-google w-3 text-google-green"></i>
                   <span class="text-fuchsia-400">var</span
