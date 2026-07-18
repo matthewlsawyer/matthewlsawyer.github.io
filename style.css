@@ -4,3 +4,22 @@
 body {
   @apply bg-stone-800 text-white;
 }
+
+/* Explicit so only one portrait shows (Tailwind hidden/sm:* can miss on some phones). */
+.portrait-desktop {
+  display: none;
+}
+
+.portrait-mobile {
+  display: block;
+}
+
+@media (min-width: 40rem) {
+  .portrait-desktop {
+    display: block;
+  }
+
+  .portrait-mobile {
+    display: none;
+  }
+}
