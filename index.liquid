@@ -13,45 +13,67 @@ title: Matthew L. Sawyer
     <div
       class="flex justify-center items-start sm:items-center min-h-screen px-6 py-6 sm:py-0"
     >
-      <div class="w-full max-w-2xl">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wide">
-          Matthew L. Sawyer
-        </h1>
+      <div
+        class="w-full max-w-4xl flex flex-col sm:flex-row gap-8 sm:gap-12 sm:items-center"
+      >
+        <img
+          src="{{ '/assets/portrait.jpg' | url }}"
+          alt="Matthew L. Sawyer"
+          width="448"
+          height="970"
+          class="hidden sm:block w-48 lg:w-56 h-auto ring-1 ring-stone-500/60 ring-offset-2 ring-offset-stone-800"
+        />
 
-        <nav class="mt-2 flex flex-col gap-1 text-sm text-stone-400">
-          <a
-            class="hover:text-stone-200"
-            href="https://github.com/matthewlsawyer"
-            >github.com/matthewlsawyer</a
-          >
-          <a
-            class="hover:text-stone-200"
-            href="https://x.com/matthewlsawyer"
-            >x.com/matthewlsawyer</a
-          >
-          <a class="hover:text-stone-200" href="/page/about/">about</a>
-        </nav>
+        <div class="min-w-0 flex-1">
+          <img
+            src="{{ '/assets/portrait-mobile.jpg' | url }}"
+            alt="Matthew L. Sawyer"
+            width="793"
+            height="793"
+            class="mb-4 h-20 w-20 rounded-full object-cover object-center ring-1 ring-stone-500/60 ring-offset-2 ring-offset-stone-800 sm:hidden"
+          />
 
-        <div class="mt-12 text-sm text-stone-400">
-          {% assign latest = collections.posts[0] %}
-          {% if latest %}
-          <a href="{{ latest.url }}" class="hover:text-stone-200"
-            >{{ latest.data.title }}</a
+          <h1
+            class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wide"
           >
-          <span class="text-stone-600"> · </span>
-          <span class="text-stone-500">{{ latest.data.published }}</span>
-          <span class="text-stone-600"> · </span>
-          <a href="/blog/" class="hover:text-stone-200">all writing →</a>
-          {% else %}
-          <a href="/blog/" class="hover:text-stone-200">writing →</a>
-          {% endif %}
-        </div>
+            Matthew L. Sawyer
+          </h1>
 
-        <div class="mt-16 text-xs text-stone-500 space-y-1">
-          <a href="https://www.11ty.dev/" class="hover:text-stone-300"
-            >made with 11ty</a
-          >
-          <p>&copy; 2026 Matthew L. Sawyer</p>
+          <nav class="mt-2 flex flex-col gap-1 text-sm text-stone-400">
+            <a
+              class="hover:text-stone-200"
+              href="https://github.com/matthewlsawyer"
+              >github.com/matthewlsawyer</a
+            >
+            <a
+              class="hover:text-stone-200"
+              href="https://x.com/matthewlsawyer"
+              >x.com/matthewlsawyer</a
+            >
+            <a class="hover:text-stone-200" href="/page/about/">about</a>
+          </nav>
+
+          <div class="mt-12 text-sm text-stone-400">
+            {% assign latest = collections.posts[0] %}
+            {% if latest %}
+            <a href="{{ latest.url }}" class="hover:text-stone-200"
+              >{{ latest.data.title }}</a
+            >
+            <span class="text-stone-600"> · </span>
+            <span class="text-stone-500">{{ latest.data.published }}</span>
+            <span class="text-stone-600"> · </span>
+            <a href="/blog/" class="hover:text-stone-200">all writing →</a>
+            {% else %}
+            <a href="/blog/" class="hover:text-stone-200">writing →</a>
+            {% endif %}
+          </div>
+
+          <div class="mt-16 text-xs text-stone-500 space-y-1">
+            <a href="https://www.11ty.dev/" class="hover:text-stone-300"
+              >made with 11ty</a
+            >
+            <p>&copy; 2026 Matthew L. Sawyer</p>
+          </div>
         </div>
       </div>
     </div>
