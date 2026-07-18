@@ -1,5 +1,5 @@
 ---
-layout: prose_layout.njk
+layout: prose_layout.liquid
 ---
 
 # {{ title }}

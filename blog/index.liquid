@@ -1,0 +1,22 @@
+---
+layout: prose_layout.liquid
+title: writing
+permalink: /blog/
+---
+
+<h1>writing</h1>
+
+{% if collections.posts.size > 0 %}
+<ul>
+  {% for post in collections.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% if post.data.published %}
+    <span class="text-stone-500"> · {{ post.data.published }}</span>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No posts yet.</p>
+{% endif %}
