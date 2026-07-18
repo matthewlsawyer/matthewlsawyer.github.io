@@ -38,7 +38,7 @@ title: Matthew L. Sawyer
             />
           </a>
 
-          <h1 class="text-4xl lg:text-6xl font-bold tracking-wide">
+          <h1 class="text-4xl md:text-5xl font-bold tracking-wide">
             Matthew L. Sawyer
           </h1>
 
@@ -56,23 +56,34 @@ title: Matthew L. Sawyer
             <a class="hover:text-stone-200" href="/page/about/">about</a>
           </nav>
 
-          <div class="mt-12 text-base text-stone-400">
+          <div class="mt-12 text-lg text-stone-400">
             {% assign latest = collections.posts[0] %}
             {% if latest %}
-            <a href="{{ latest.url }}" class="hover:text-stone-200"
+            <a
+              href="{{ latest.url }}"
+              class="underline underline-offset-2 hover:text-stone-200"
               >{{ latest.data.title }}</a
             >
-            <span class="text-stone-600"> · </span>
-            <span class="text-stone-500">{{ latest.data.published }}</span>
-            <span class="text-stone-600"> · </span>
-            <a href="/blog/" class="hover:text-stone-200">all writing →</a>
+            <span class="text-stone-500"> · {{ latest.data.published }}</span>
+            <span class="text-stone-500"> · </span>
+            <a
+              href="/blog/"
+              class="inline-block underline underline-offset-2 hover:text-stone-200"
+              >all writing →</a
+            >
             {% else %}
-            <a href="/blog/" class="hover:text-stone-200">writing →</a>
+            <a
+              href="/blog/"
+              class="underline underline-offset-2 hover:text-stone-200"
+              >writing →</a
+            >
             {% endif %}
           </div>
 
           <div class="mt-16 text-sm text-stone-500 space-y-1">
-            <a href="https://www.11ty.dev/" class="hover:text-stone-300"
+            <a
+              href="https://www.11ty.dev/"
+              class="hover:text-stone-300"
               >made with 11ty</a
             >
             <p>&copy; 2026 Matthew L. Sawyer</p>
