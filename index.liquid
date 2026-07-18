@@ -1,0 +1,59 @@
+---
+title: Matthew L. Sawyer
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{{ '/style.css' | url }}" rel="stylesheet" />
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <div
+      class="flex justify-center items-start sm:items-center min-h-screen px-6 py-6 sm:py-0"
+    >
+      <div class="w-full max-w-2xl">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wide">
+          Matthew L. Sawyer
+        </h1>
+
+        <nav class="mt-2 flex flex-col gap-1 text-sm text-stone-400">
+          <a
+            class="hover:text-stone-200"
+            href="https://github.com/matthewlsawyer"
+            >github.com/matthewlsawyer</a
+          >
+          <a
+            class="hover:text-stone-200"
+            href="https://x.com/matthewlsawyer"
+            >x.com/matthewlsawyer</a
+          >
+          <a class="hover:text-stone-200" href="/page/about/">about</a>
+        </nav>
+
+        <div class="mt-12 text-sm text-stone-400">
+          {% assign latest = collections.posts[0] %}
+          {% if latest %}
+          <a href="{{ latest.url }}" class="hover:text-stone-200"
+            >{{ latest.data.title }}</a
+          >
+          <span class="text-stone-600"> · </span>
+          <span class="text-stone-500">{{ latest.data.published }}</span>
+          <span class="text-stone-600"> · </span>
+          <a href="/blog/" class="hover:text-stone-200">all writing →</a>
+          {% else %}
+          <a href="/blog/" class="hover:text-stone-200">writing →</a>
+          {% endif %}
+        </div>
+
+        <div class="mt-16 text-xs text-stone-500 space-y-1">
+          <a href="https://www.11ty.dev/" class="hover:text-stone-300"
+            >made with 11ty</a
+          >
+          <p>&copy; 2026 Matthew L. Sawyer</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
