@@ -3,7 +3,7 @@ layout: post_layout.md
 title: Throneroom
 date: 2026-07-18T20:00:00
 published: Jul 18, 2026
-credit: 'Tarot images from the <a class="hover:text-stone-300" href="https://commons.wikimedia.org/wiki/Category:Rider-Waite_tarot_deck">Rider-Waite tarot deck</a> on Wikimedia Commons.'
+credit: 'Tarot images from the <a class="hover:text-stone-300" href="https://commons.wikimedia.org/wiki/Category:Rider-Waite_tarot_deck">Rider-Waite tarot deck</a> on Wikimedia Commons.<br />Site source: <a class="hover:text-stone-300" href="https://github.com/matthewlsawyer/matthewlsawyer.github.io">matthewlsawyer.github.io</a>.'
 ---
 
 _Chat is a distant memory._
@@ -30,19 +30,21 @@ A workspace that improves decisions over time: immutable history, reproducible i
 
 Why: you need somewhere that is neither a random notes folder nor a product backlog. Throneroom provides the cortex: shared memory and constraints, not the apps you ship.
 
-
 ```
-You (The Throne)
-  │
-  ▼
-Agent (The Hand) interaction via
-  │
-  ├─ Knowledge         → Canon (durable) + XP (lived lessons)
-  ├─ Board             → advisor personas when asking counsel
-  ├─ Rules (rules/)    → constraints always on
-  ├─ Skills (skills/)  → workflows when invoked
-  └─ Projects          → real shipping work; local ownership stays local
-    └─ Local or externally hosted (gitignored) repos
+Throneroom
+├─ You (The Throne) -> owns judgement and endorsement
+└─ Agent (The Hand) -> interacts with:
+   ├─ Knowledge
+   │  ├─ `_raw` -> raw data files (gitignored)
+   │  ├─ Canon -> durable records
+   │  └─ XP -> lived lessons
+   ├─ Board -> advisor perspectives
+   ├─ Rules -> always-on constraints
+   ├─ Skills -> defined workflows
+   ├─ Projects
+   │  ├─ site/ (external repo: matthewlsawyer.github.io)
+   │  └─ Other local or externally hosted (gitignored) repos
+   └─ Scripts -> toolbelt
 ```
 
 ## The Throne
@@ -61,8 +63,6 @@ You. The King, the Crown. Owns judgement. Approves governance changes and durabl
 
 Why: without an explicit owner of judgement, the agent quietly becomes the authority.
 
-Naming the Throne keeps endorsement and taste _human_.
-
 ## The Hand
 
 <img
@@ -78,6 +78,8 @@ _Agentic magic._
 The Hand of the King. The session agent. One voice, in-session. Executes, searches, proposes. Follows rules and executes skills. Leaves judgement to you.
 
 Why: "the AI" is vague. Hand is a role with duties -> preserve intent, leave the system more coherent, do not invent durable truth without endorsement.
+
+Defined in `AGENTS.md` file.
 
 ## Knowledge
 
