@@ -5,6 +5,11 @@ body {
   @apply bg-stone-800 text-white;
 }
 
+/* Match homepage portrait ring; keep cards from sprawling in prose. */
+.prose img.tarot {
+  @apply my-4 w-28 sm:w-32 h-auto ring-1 ring-stone-500/60 ring-offset-2 ring-offset-stone-800;
+}
+
 /* Explicit so only one portrait shows (Tailwind hidden/sm:* can miss on some phones). */
 .portrait-desktop {
   display: none;
