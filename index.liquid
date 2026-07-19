@@ -56,26 +56,31 @@ title: Matthew L. Sawyer
             <a class="hover:text-stone-200" href="/page/about/">about</a>
           </nav>
 
-          <div class="mt-12 text-lg text-stone-400">
-            {% assign latest = collections.posts[0] %}
-            {% if latest %}
-            <a
-              href="{{ latest.url }}"
-              class="underline underline-offset-2 hover:text-stone-200"
-              >{{ latest.data.title }}</a
-            >
-            <span class="text-stone-500"> · {{ latest.data.published }}</span>
-            <span class="text-stone-500"> · </span>
+          <div class="mt-12 text-base text-stone-400">
+            {% if collections.posts.size > 0 %}
+            <ul class="flex flex-col items-start gap-1.5">
+              {% for post in collections.posts limit: 5 %}
+              <li>
+                <a
+                  href="{{ post.url }}"
+                  class="underline underline-offset-2 hover:text-stone-200"
+                  >{{ post.data.title }}</a
+                >{% if post.data.published %}<span class="text-stone-500">
+                  · {{ post.data.published }}</span
+                >{% endif %}
+              </li>
+              {% endfor %}
+            </ul>
             <a
               href="/blog/"
-              class="inline-block underline underline-offset-2 hover:text-stone-200"
-              >all writing -&gt;</a
+              class="mt-4 inline-block hover:text-stone-200"
+              >all posts -&gt;</a
             >
             {% else %}
             <a
               href="/blog/"
               class="underline underline-offset-2 hover:text-stone-200"
-              >writing -&gt;</a
+              >posts -&gt;</a
             >
             {% endif %}
           </div>
