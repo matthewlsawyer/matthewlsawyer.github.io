@@ -4,7 +4,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi
-      .getFilteredByGlob("blog/*.md")
+      .getFilteredByGlob("posts/*.md")
       .sort((a, b) => b.date - a.date);
   });
 };
