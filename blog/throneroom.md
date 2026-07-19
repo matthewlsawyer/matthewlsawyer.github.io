@@ -16,13 +16,15 @@ The naming is light fantasy on purpose. The nouns below are not flavor; they are
 
 ## The Throneroom
 
-<img
-  class="tarot"
-  src="/assets/tarot/11-Justice.png"
-  alt="Justice"
-  width="300"
-  height="527"
-/>
+<a href="/assets/tarot/11-Justice.png">
+  <img
+    class="my-4 w-28 sm:w-32 h-auto ring-1 ring-stone-500/60 ring-offset-2 ring-offset-stone-800"
+    src="/assets/tarot/11-Justice.png"
+    alt="Justice"
+    width="300"
+    height="527"
+  />
+</a>
 
 _The theatre of governance._
 
@@ -49,13 +51,15 @@ Throneroom
 
 ## The Throne
 
-<img
-  class="tarot"
-  src="/assets/tarot/04-TheEmperor.png"
-  alt="The Emperor"
-  width="300"
-  height="527"
-/>
+<a href="/assets/tarot/04-TheEmperor.png">
+  <img
+    class="my-4 w-28 sm:w-32 h-auto ring-1 ring-stone-500/60 ring-offset-2 ring-offset-stone-800"
+    src="/assets/tarot/04-TheEmperor.png"
+    alt="The Emperor"
+    width="300"
+    height="527"
+  />
+</a>
 
 _Judgement is not a feature of the model._
 
@@ -65,13 +69,15 @@ Why: without an explicit owner of judgement, the agent quietly becomes the autho
 
 ## The Hand
 
-<img
-  class="tarot"
-  src="/assets/tarot/01-TheMagician.png"
-  alt="The Magician"
-  width="300"
-  height="527"
-/>
+<a href="/assets/tarot/01-TheMagician.png">
+  <img
+    class="my-4 w-28 sm:w-32 h-auto ring-1 ring-stone-500/60 ring-offset-2 ring-offset-stone-800"
+    src="/assets/tarot/01-TheMagician.png"
+    alt="The Magician"
+    width="300"
+    height="527"
+  />
+</a>
 
 _Agentic magic._
 
@@ -83,13 +89,15 @@ Defined in `AGENTS.md` file.
 
 ## Knowledge
 
-<img
-  class="tarot"
-  src="/assets/tarot/Cups01.png"
-  alt="Ace of Cups"
-  width="300"
-  height="527"
-/>
+<a href="/assets/tarot/Cups01.png">
+  <img
+    class="my-4 w-28 sm:w-32 h-auto ring-1 ring-stone-500/60 ring-offset-2 ring-offset-stone-800"
+    src="/assets/tarot/Cups01.png"
+    alt="Ace of Cups"
+    width="300"
+    height="527"
+  />
+</a>
 
 _A source of provenance._
 
@@ -106,13 +114,15 @@ Provenance matters.
 
 ## The Board
 
-<img
-  class="tarot"
-  src="/assets/tarot/05-TheHierophant.png"
-  alt="The Hierophant"
-  width="300"
-  height="527"
-/>
+<a href="/assets/tarot/05-TheHierophant.png">
+  <img
+    class="my-4 w-28 sm:w-32 h-auto ring-1 ring-stone-500/60 ring-offset-2 ring-offset-stone-800"
+    src="/assets/tarot/05-TheHierophant.png"
+    alt="The Hierophant"
+    width="300"
+    height="527"
+  />
+</a>
 
 _Schools of thought as lenses._
 
@@ -124,13 +134,15 @@ Tension is the feature.
 
 ## Rules
 
-<img
-  class="tarot"
-  src="/assets/tarot/08-Strength.png"
-  alt="Strength"
-  width="300"
-  height="527"
-/>
+<a href="/assets/tarot/08-Strength.png">
+  <img
+    class="my-4 w-28 sm:w-32 h-auto ring-1 ring-stone-500/60 ring-offset-2 ring-offset-stone-800"
+    src="/assets/tarot/08-Strength.png"
+    alt="Strength"
+    width="300"
+    height="527"
+  />
+</a>
 
 _Disciplined power._
 
@@ -142,13 +154,15 @@ Agents need direction.
 
 ### The Axiom
 
-<img
-  class="tarot"
-  src="/assets/tarot/14-Temperance.png"
-  alt="Temperance"
-  width="300"
-  height="527"
-/>
+<a href="/assets/tarot/14-Temperance.png">
+  <img
+    class="my-4 w-28 sm:w-32 h-auto ring-1 ring-stone-500/60 ring-offset-2 ring-offset-stone-800"
+    src="/assets/tarot/14-Temperance.png"
+    alt="Temperance"
+    width="300"
+    height="527"
+  />
+</a>
 
 _Preserve the system._
 
@@ -160,13 +174,15 @@ Always serve the Throne.
 
 ## Skills
 
-<img
-  class="tarot"
-  src="/assets/tarot/07-TheChariot.png"
-  alt="The Chariot"
-  width="300"
-  height="527"
-/>
+<a href="/assets/tarot/07-TheChariot.png">
+  <img
+    class="my-4 w-28 sm:w-32 h-auto ring-1 ring-stone-500/60 ring-offset-2 ring-offset-stone-800"
+    src="/assets/tarot/07-TheChariot.png"
+    alt="The Chariot"
+    width="300"
+    height="527"
+  />
+</a>
 
 _Execution arm._
 
