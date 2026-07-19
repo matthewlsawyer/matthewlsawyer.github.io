@@ -63,7 +63,7 @@ Throneroom
 
 _Judgement is not a feature of the model._
 
-You. The King, the Crown. Owns judgement. Approves governance changes and durable knowledge. Agents propose; you decide what becomes lasting.
+You. The King, the Crown. You own judgement. You approve governance changes and durable knowledge. Agents propose; you decide what becomes lasting.
 
 Why: without an explicit owner of judgement, the agent quietly becomes the authority.
 
@@ -188,10 +188,10 @@ _Execution arm._
 
 Invoked workflows & business logic for the session:
 
-- `throne-ingest` -> canonicalize an external source into the knowledge graph
-- `throne-ask` -> consult the knowledge graph and apply Board lenses
-- `throne-audit` -> measure internal Throneroom fitness againt the Axiom
-- `throne-xp` -> capture lessons into experiental knowledge
+- `throne-ingest` -> canonicalize an external source into the knowledge graph.
+- `throne-ask` -> consult the knowledge graph and apply Board lenses.
+- `throne-audit` -> measure internal Throneroom fitness againt the Axiom.
+- `throne-xp` -> capture lessons into experiental knowledge.
 
 One skill at a time; no skill calls another.
 
@@ -217,10 +217,10 @@ Why: not everything is a skill. Some things are just tools.
 
 ## What it solves
 
-1. **Session amnesia** - lessons and records outlive the chat.
-2. **Storing and distilling ideas** - external material becomes Canon; session experience becomes XP.
-3. **Shared rules across projects** - one place for preference; install promotes it into Cursor or any agentic IDE/CLI.
-4. **Boundary clarity** - Throneroom provides shared cortex, not landlord.
+1. **Session amnesia** -> lessons and records outlive the chat.
+2. **Storing and distilling ideas** -> external material becomes Canon; session experience becomes XP.
+3. **Shared rules across projects** -> one place for preference; install promotes it into Cursor or any agentic IDE/CLI.
+4. **Boundary clarity** -> Throneroom provides shared cortex, not landlord.
 
 Portable by design. My harness today is Cursor; the Concepts assume an agentic environment, not a vendor.
 
