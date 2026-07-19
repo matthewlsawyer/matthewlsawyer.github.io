@@ -11,7 +11,9 @@
   <body>
     {% include "header.html" %}
     <div class="m-auto p-4 md:p-12">
-      <article class="prose prose-invert prose-lg lg:prose-xl">
+      <article
+        class="prose prose-stone prose-invert prose-lg lg:prose-xl [&_a]:hover:text-white"
+      >
         {{ content }}
       </article>
       {% include "footer.html" %}
