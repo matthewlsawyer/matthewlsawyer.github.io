@@ -16,6 +16,11 @@
       >
         {{ content }}
       </article>
+      {% if credit %}
+      <p class="mt-8 text-sm text-stone-500">
+        {{ credit }}
+      </p>
+      {% endif %}
       {% include "footer.html" %}
     </div>
   </body>
