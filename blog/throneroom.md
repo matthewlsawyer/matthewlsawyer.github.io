@@ -30,6 +30,21 @@ A workspace that improves decisions over time: immutable history, reproducible i
 
 Why: you need somewhere that is neither a random notes folder nor a product backlog. Throneroom provides the cortex: shared memory and constraints, not the apps you ship.
 
+
+```
+You (The Throne)
+  │
+  ▼
+Agent (The Hand) interaction via
+  │
+  ├─ Knowledge         → Canon (durable) + XP (lived lessons)
+  ├─ Board             → advisor personas when asking counsel
+  ├─ Rules (rules/)    → constraints always on
+  ├─ Skills (skills/)  → workflows when invoked
+  └─ Projects          → real shipping work; local ownership stays local
+    └─ Local or externally hosted (gitignored) repos
+```
+
 ## The Throne
 
 <img
@@ -123,7 +138,7 @@ Why: the boring fights (formatting, commit shape, DRY/KISS) should not be reinve
 
 Agents need direction.
 
-## The Axiom
+### The Axiom
 
 <img
   class="tarot"
