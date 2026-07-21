@@ -209,7 +209,7 @@ Governance across repos.
 
 ## Scripts
 
-Manual operators (install rules/skills into the harness, etc.). Run by the you or the agent when operational work calls for it.
+Manual operators (install rules/skills into the harness, etc.). Run by you or the agent when operational work calls for it.
 
 Why: not everything is a skill. Some things are just tools.
 
