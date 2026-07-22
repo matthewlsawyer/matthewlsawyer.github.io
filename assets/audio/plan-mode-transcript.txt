@@ -1,0 +1,183 @@
+Plan Mode Oracle
+fire00f1y
+Made with Suno
+
+---
+
+**Everbody's Free (To use plan mode)**
+
+Ladies and gentlemen of the engineering team:
+
+Always use plan mode.
+
+If I could offer you one practical tip for your agentic future,
+plan mode would be it.
+
+The long-term benefits of plan mode have been demonstrated
+by every developer who has ever said,
+"Wait, why is it changing that file?"
+
+Whereas the rest of my advice
+has no basis more reliable
+than my own over-caffeinated experience.
+
+Enjoy the precision of a good spec.
+Or don't.
+You will not appreciate its precision
+until the agent ignores one.
+
+But trust this:
+five sprints from now,
+you'll look back at your chaotic prompts
+and recall in a way you can't grasp now
+how much context you wasted
+and how many times you said,
+"Just fix the tests,"
+to a model that had no idea what "fix" meant.
+
+You are not as clear as you imagine.
+
+Don't worry about autocomplete.
+Or worry, but know that worrying is about as effective
+as asking a chatbot to upgrade Spring Boot
+with no repo context, no acceptance criteria,
+and vibes.
+
+The real troubles in your codebase
+are apt to be things that never crossed your anxious mind:
+a hidden dependency,
+a flaky integration test,
+a forgotten config value in staging,
+a security scan that wakes up at 4:03 p.m. on Friday.
+
+Do one thing every day that makes the agent prove itself.
+
+Run the tests.
+
+Don't be reckless with production.
+Don't tolerate agents that are reckless with production.
+
+Comment kindly.
+
+Read diffs.
+
+Don't waste your time on giant prompts.
+Sometimes you're ahead, sometimes you're behind.
+The context window is finite,
+and in the end,
+so is your patience.
+
+Remember the good plans you receive.
+Forget the bad completions.
+If you succeed in doing this,
+tell me how.
+
+Keep your old architecture diagrams.
+Throw away your old assumptions.
+
+Stretch your specs.
+
+Don't feel guilty if you don't know how to delegate yet.
+The most interesting engineers I know
+still accidentally do work themselves
+that a sub-agent could have done in parallel.
+
+Some of the most interesting agents I know
+started as a markdown file
+with a weirdly specific job.
+
+Maybe you'll use Copilot.
+Maybe you'll use Claude.
+Maybe Cursor.
+Maybe something we haven't installed yet
+because Legal has questions.
+
+Whatever you use,
+don't confuse the tool with the primitive.
+
+Plan.
+
+Give context.
+
+Let it inspect.
+
+Let it propose.
+
+Review.
+
+Then execute.
+
+Accept certain inalienable truths:
+models will hallucinate,
+tests will matter,
+logs will save you,
+and one day your team will discover
+that "agentic development" was never magic.
+
+It was workflow.
+
+Respect your reviewers.
+
+Especially the adversarial ones.
+
+Don't expect anyone else to verify your output.
+Maybe you have CI.
+Maybe you have coverage.
+But you never know when either one
+will quietly be lying to you.
+
+Be careful whose MCP servers you trust.
+But be patient with the people who build them.
+
+Fleet mode is a form of time travel,
+but only when the tasks are truly independent.
+
+Understand that agents come and go,
+but a good spec is forever.
+
+Work hard to bridge the gaps in your repo,
+because the older your system gets,
+the more it needs documentation
+that explains why it is like this.
+
+Live in plan mode once,
+but leave before it makes you afraid to execute.
+
+Live in autopilot once,
+but leave before it makes you stop reading diffs.
+
+Use `/compact`.
+
+Accept that sometimes the agent needs a fresh session.
+
+Do not read too much vendor marketing.
+It will only make you feel behind.
+
+Maybe the agent will finish the migration in an afternoon.
+Maybe it won't.
+
+Maybe the plan will reveal the work is bigger than you thought.
+Maybe that is the win.
+
+But whatever happens,
+don't congratulate yourself too much,
+or berate yourself either.
+
+Your choices are half architecture.
+So are everybody else's.
+
+Enjoy your tools.
+Use them every way you can.
+
+Don't be afraid of them,
+or of what other people think of them.
+
+They are the greatest leverage instrument
+you are likely to touch this quarter.
+
+Dance with the agent.
+
+Even if you have nowhere to do it
+but a feature branch in a worktree.
+
+But trust me on the plan mode.
