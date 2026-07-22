@@ -10,7 +10,7 @@ credit: 'Song by <a class="hover:text-stone-300" href="https://github.com/fire00
 
 A friend of mine put together a song about Plan Mode, and agentic development in general. It's hilarious and insightful; sharing it here.
 
-<figure class="not-prose my-6 flex flex-col sm:flex-row gap-4 items-center sm:items-end">
+<figure class="not-prose my-18 flex flex-col sm:flex-row gap-4 items-center sm:items-end">
   <img
     class="w-40 h-40 shrink-0 ring-1 ring-stone-500/60 ring-offset-2 ring-offset-stone-800"
     src="/assets/audio/plan-mode-cover.jpg"
