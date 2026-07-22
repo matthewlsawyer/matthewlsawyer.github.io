@@ -6,7 +6,7 @@ published: Jul 22, 2026
 credit: 'Song by <a class="hover:text-stone-300" href="https://github.com/fire00f1y">Bryan Davis (fire00f1y)</a>. Made with Suno.'
 ---
 
-> Ladies and gentlemen of the Engineering team, use Plan Mode.
+> Ladies and gentlemen of the Engineering team: Always use Plan Mode.
 
 A friend of mine put together a song about Plan Mode, and agentic development in general. It's hilarious and insightful; sharing it here.
 
