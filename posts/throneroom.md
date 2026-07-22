@@ -6,7 +6,7 @@ published: Jul 18, 2026
 credit: 'Tarot images from the <a class="hover:text-stone-300" href="https://commons.wikimedia.org/wiki/Category:Rider-Waite_tarot_deck">Rider-Waite tarot deck</a> on Wikimedia Commons.<br />Site source: <a class="hover:text-stone-300" href="https://github.com/matthewlsawyer/matthewlsawyer.github.io">matthewlsawyer.github.io</a>.'
 ---
 
-_Chat is a distant memory._
+_Context is a distant memory._
 
 Useful work with coding agents happens in sessions. With a click, another session opens and the context is gone, half-remembered, or restated differently. External ideas get summarized once and vanish. Engineering style gets re-litigated across repos.
 
