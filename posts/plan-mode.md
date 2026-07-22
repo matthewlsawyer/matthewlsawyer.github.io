@@ -22,11 +22,11 @@ Thanks to [Bryan Davis](https://github.com/fire00f1y) for making me laugh with t
   />
   <div class="w-full min-w-0">
     <p class="mb-2 text-sm text-stone-400">Plan Mode Oracle - fire00f1y</p>
+    <p class="mb-2 text-sm">
+      <a class="text-stone-400 hover:text-stone-300" href="/assets/audio/plan-mode-transcript.txt">Transcript</a>
+    </p>
     <audio class="w-full" controls preload="metadata" src="/assets/audio/plan-mode.mp3">
       <a href="/assets/audio/plan-mode.mp3">Download Plan Mode Oracle</a>
     </audio>
-    <p class="mt-2 text-sm">
-      <a class="text-stone-400 hover:text-stone-300" href="/assets/audio/plan-mode-transcript.txt">Transcript</a>
-    </p>
   </div>
 </figure>
