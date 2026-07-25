@@ -42,47 +42,69 @@ A real scry of [omarchy](https://github.com/basecamp/omarchy) that includes:
 
 ```text
 Omarchy
-├─ⓘ Beautiful, modern & opinionated Linux (DHH); omarchy.org; MIT
+├─ⓘ Arch + Hyprland distro; runtime via $OMARCHY_PATH (uwsm session)
 ╞══════════════════◆
-├─ Product surface
-│  ├─ default/omarchy-skill/SKILL.md
-│  │  └─ⓘ End-user ~/.config customization; not source dev
-│  └─ README.md
-│
-├─ Contributor guidance
-│  └─ AGENTS.md
-│     ├─ⓘ omarchy-* commands; metadata in bin/; $OMARCHY_PATH
-│     ├─ install/ · config/ · themes/ · migrations/
-│     ├─▶ ./test/all
-│     ├─▶ ./test/cli
-│     ├─▶ ./test/shell
-│     └─▶ omarchy-restart-shell
+├─ CLI
+│  ├─ bin/omarchy
+│  │  └─ⓘ Routes omarchy-*; GROUP_DESCRIPTIONS is authoritative
+│  ├─ bin/
+│  │  └─ⓘ # omarchy: metadata in first 80 lines (group, summary, args, ...)
+│  └─▶ omarchy commands
+│     └─ⓘ Discovery for users and agents
 │
 ├─ Omarchy shell
-│  ├─ shell/README.md
-│  │  ├─ⓘ Single long-running Quickshell; Hyprland autostart
-│  │  ├─ shell.qml · services/ · plugins/
-│  │  ├─ ~/.config/omarchy/shell.json
-│  │  ├─▶ omarchy-shell shell ping
-│  │  ├─▶ omarchy plugin add
-│  │  └─▶ omarchy plugin update
-│  │
-│  ├─ shell/plugins/README.md
-│  │  └─ⓘ First-party manifest.json plugins (bar, panels, services, …)
-│  │
-│  ├─ shell/plugins/bar/README.md
-│  │  ├─ⓘ omarchy.bar; layout in shell.json
-│  │  └─▶ omarchy bar plugin add
-│  │
-│  └─ shell/plugins/panels/tailscale/README.md
-│     ├─ⓘ omarchy.tailscale bar-widget
-│     └─▶ omarchy bar plugin add omarchy.tailscale
+│  ├─ shell/
+│  │  ├─ shell.qml
+│  │  ├─ services/
+│  │  │  ├─ PluginRegistry.qml
+│  │  │  └─ BarWidgetRegistry.qml
+│  │  └─ plugins/
+│  │     ├─ bar/
+│  │     ├─ panels/
+│  │     ├─ menu/
+│  │     └─ ...
+│  ├─ⓘ One Quickshell process per session; Hyprland autostart quickshell -p
+│  ├─▶ omarchy-shell shell ping
+│  ├─▶ omarchy-restart-shell
+│  └─▶ omarchy plugin add | update | clone
 │
-└─ User CLI (from shipped skill)
-   ├─▶ omarchy commands
-   ├─▶ omarchy refresh
-   ├─▶ omarchy theme set
-   └─▶ omarchy update
+├─ Bar & widgets
+│  ├─ shell/plugins/bar/
+│  ├─ shell/plugins/panels/
+│  │  └─ tailscale/
+│  │     └─ⓘ omarchy.tailscale bar-widget + panel
+│  └─▶ omarchy bar plugin add
+│
+├─ Config & themes
+│  ├─ config/
+│  │  └─ⓘ Defaults copied to ~/.config/
+│  ├─ default/themed/*.tpl
+│  ├─ themes/*/colors.toml
+│  └─▶ omarchy-refresh-config
+│
+├─ Install & upgrade
+│  ├─ install/
+│  ├─▶ omarchy-setup-system
+│  ├─▶ omarchy-setup-hardware
+│  ├─▶ omarchy-finalize-user
+│  └─▶ omarchy-upgrade-to-quattro
+│
+├─ Migrations
+│  ├─ migrations/
+│  └─▶ omarchy-migrate
+│
+├─ Quality
+│  ├─▶ ./test/all
+│  ├─▶ ./test/cli
+│  └─▶ ./test/shell
+│
+├─ End-user skill
+│  └─ default/omarchy-skill/SKILL.md
+│     └─ⓘ ~/.config customization; not source dev
+│
+└─ Guidance
+   └─ AGENTS.md
+      └─ⓘ Bash style, helpers, shell IPC, acceptance via omarchy-iso
 ```
 
 Full example run found in [examples/grim-scry/omarchy](https://github.com/matthewlsawyer/grimoire/blob/main/examples/grim-scry/omarchy.md).
