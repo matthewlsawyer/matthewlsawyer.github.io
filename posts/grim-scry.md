@@ -1,16 +1,16 @@
 ---
 layout: post_layout.md
-title: Scry
+title: Grim Scry
 date: 2026-07-21T12:00:00
 published: Jul 21, 2026
-credit: 'Tarot images from the <a class="hover:text-stone-300" href="https://commons.wikimedia.org/wiki/Category:Rider-Waite_tarot_deck">Rider-Waite tarot deck</a> on Wikimedia Commons.<br />Site source: <a class="hover:text-stone-300" href="https://github.com/matthewlsawyer/matthewlsawyer.github.io">matthewlsawyer.github.io</a>.'
+credit: 'Tarot images from the <a class="hover:text-stone-300" href="https://commons.wikimedia.org/wiki/Category:Rider-Waite_tarot_deck">Rider-Waite tarot deck</a> on Wikimedia Commons.'
 ---
 
 _You must see before you can act._
 
-You open a repo cold. The agent lists files, reads random READMEs, chases imports, and ten minutes later you have a paragraph summary that will not survive the next session. What you wanted was shape: what matters, how it is organized, what you run first.
+You open a repo cold. The agent lists files, reads random READMEs, chases imports, and ten minutes later you have a paragraph summary that will not survive the next session. What you wanted was _shape_: what matters, how it is organized, what you run first.
 
-**Scry** is the first spell in [Grimoire](https://github.com/matthewlsawyer/grimoire): a small spellbook of composable agent skills. `/grim-scry` attempts to give a high-level understanding of a repo by distilling _meaning_.
+**Grim Scry** is the first spell in [Grimoire](https://github.com/matthewlsawyer/grimoire): a spellbook of small agent skills. `/grim-scry` reveals project meaning as one at-a-glance Scry Lantern.
 
 ## The Hermit
 
@@ -26,9 +26,66 @@ You open a repo cold. The agent lists files, reads random READMEs, chases import
 
 _Clarity over depth of knowledge._
 
-The Hermit carries a lantern, not a floodlight. Scry works the same way: a shallow directory reveal, doc read only on what was revealed, then distill meaning and emit lenses. No recursive hunt across the whole tree. No pretending to understand code it never opened.
+The Hermit carries a lantern, not a floodlight. Scry works the same way: a closed seed set, docs read only on those seeds, then distill meaning into **one** lantern viewport. Ideas hang first; implementers and named commands hang underneath. No recursive hunt across the whole tree. No pretending to understand code it never opened.
 
 The spell is for orientation, not omniscience. That restraint is the point.
+
+---
+
+## Example: Omarchy
+
+A real scry of [omarchy](https://github.com/basecamp/omarchy) that includes:
+
+- Hierarchical structure of main concepts
+- `ⓘ` annotation branches
+- `─▶` invocation branches
+
+```text
+Omarchy
+├─ⓘ Beautiful, modern & opinionated Linux (DHH); omarchy.org; MIT
+╞══════════════════◆
+├─ Product surface
+│  ├─ default/omarchy-skill/SKILL.md
+│  │  └─ⓘ End-user ~/.config customization; not source dev
+│  └─ README.md
+│
+├─ Contributor guidance
+│  └─ AGENTS.md
+│     ├─ⓘ omarchy-* commands; metadata in bin/; $OMARCHY_PATH
+│     ├─ install/ · config/ · themes/ · migrations/
+│     ├─▶ ./test/all
+│     ├─▶ ./test/cli
+│     ├─▶ ./test/shell
+│     └─▶ omarchy-restart-shell
+│
+├─ Omarchy shell
+│  ├─ shell/README.md
+│  │  ├─ⓘ Single long-running Quickshell; Hyprland autostart
+│  │  ├─ shell.qml · services/ · plugins/
+│  │  ├─ ~/.config/omarchy/shell.json
+│  │  ├─▶ omarchy-shell shell ping
+│  │  ├─▶ omarchy plugin add
+│  │  └─▶ omarchy plugin update
+│  │
+│  ├─ shell/plugins/README.md
+│  │  └─ⓘ First-party manifest.json plugins (bar, panels, services, …)
+│  │
+│  ├─ shell/plugins/bar/README.md
+│  │  ├─ⓘ omarchy.bar; layout in shell.json
+│  │  └─▶ omarchy bar plugin add
+│  │
+│  └─ shell/plugins/panels/tailscale/README.md
+│     ├─ⓘ omarchy.tailscale bar-widget
+│     └─▶ omarchy bar plugin add omarchy.tailscale
+│
+└─ User CLI (from shipped skill)
+   ├─▶ omarchy commands
+   ├─▶ omarchy refresh
+   ├─▶ omarchy theme set
+   └─▶ omarchy update
+```
+
+Full example run found in [examples/grim-scry/omarchy.md](https://github.com/matthewlsawyer/grimoire/blob/main/examples/grim-scry/omarchy.md).
 
 ---
 
@@ -36,95 +93,14 @@ The spell is for orientation, not omniscience. That restraint is the point.
 
 Scry is not a replacement for reading code when you are about to change behavior. It is the lantern: enough light to pick a path before you walk it.
 
-Given a target path, `grim-scry` will:
+Given a repository or workspace, `grim-scry` distills meaning and emits one at-a-glance Scry Lantern in chat:
 
-1. **Directory reveal** - `find` to depth `N`. Honor `.gitignore`. Skip plumbing, vendor, and generated paths.
-2. **Doc seed extract** - readmes, agents, rules, and index files on revealed dirs only. Set purpose when docs name it; do not invent.
-3. **Distill meaning** - capped to a salient set. Omit rather than verify.
-4. **Emit** three lenses, a summary, and observations; shown below.
+1. **Resolve the target** - repo or workspace path.
+2. **Discover a closed seed set** - session-only, via deterministic listing (`discover.py` in Grimoire).
+3. **Read only those seeds; distill for salience** - annotate purpose only when docs named it.
+4. **Emit** - Scry Lantern (one tree: concepts, paths, commands), then a summary and observations.
 
-### Directory hierarchy
-
-Filesystem structure with purpose annotations only when documentation earned them:
-
-```text
-tailscale/ ◀─ Open-source Tailscale client; tailscaled daemon and tailscale CLI
-├─ cmd/ ◀─ CLI binaries and tools
-│  ├─ tailscale/
-│  ├─ tailscaled/
-│  ├─ derper/
-│  └─ k8s-operator/
-├─ derp/ ◀─ DERP packet relay client and server code
-├─ feature/ ◀─ Modular feature system; conditionally linkable packages
-├─ tsnet/ ◀─ Embed a Tailscale node in a Go program
-└─ gokrazy/ ◀─ Gokrazy appliance image (pre-alpha)
-```
-
-From a real scry of [tailscale/tailscale](https://github.com/tailscale/tailscale). Depth 3 still omits dozens of Go packages; the viewport shows what the distill step kept.
-
-### Conceptual hierarchy
-
-This is the lens you reach for when onboarding: not "what folders exist," but "what subsystems does this repo think it has?"
-
-Ideas first, implementers (and containers) hung underneath:
-
-```text
-tailscale
-├─ tailscaled ◀─ Background daemon managing the virtual network interface
-├─ tailscale CLI ◀─ Command-line tool for configuring and using Tailscale
-│  └─▶ tailscaled
-├─ DERP ◀─ Packet relay for disco and encrypted WireGuard when UDP or NAT traversal fails
-│  ├─ derp/
-│  └─ cmd/derper/
-├─ tsnet ◀─ Self-contained embedded Tailscale node in a Go process
-│  └─ tsnet/
-└─ modular features ◀─ Conditionally linkable feature packages via build tags and hooks
-   └─ feature/
-```
-
-### Workflow hierarchy
-
-Where "how do I run this?" becomes answerable without spelunking.
-
-Commands and entrypoints, grouped by what they are for. The viewport contract's north-star example shows the intended density - named flows, invocation arrows, terse notes:
-
-```text
-next.js
-├─ CLI
-│  ├─▶ next dev
-│  ├─▶ next start
-│  └─▶ next build
-├─ Local development
-│  ├─▶ pnpm --filter=next dev ◀─ watch rebuild while iterating
-│  └─▶ pnpm --filter=next build ◀─ core package only
-├─ Testing ◀─ mode- and bundler-specific
-│  ├─▶ pnpm test-dev-turbo ◀─ dev mode, Turbopack (default)
-│  └─▶ pnpm test-unit ◀─ fast, no browser
-└─ Specialized instructions
-   └─▶ AGENTS.md ◀─ primary instruction
-```
-
-A live tailscale scry surfaces Makefile and README build paths the same way:
-
-```text
-tailscale
-├─ Build
-│  ├─▶ go install tailscale.com/cmd/tailscale{,d}
-│  ├─▶ ./build_dist.sh tailscale.com/cmd/tailscale
-│  └─▶ ./build_dist.sh tailscale.com/cmd/tailscaled
-├─ Quality
-│  ├─▶ make check
-│  └─▶ make vet
-└─ Kubernetes operator
-   └─▶ make kube-generate-all
-      └─▶ cmd/k8s-operator/
-```
-
----
-
-## Examples
-
-Live scry output for [tailscale/tailscale](https://github.com/tailscale/tailscale) lives in the [grimoire examples](https://github.com/matthewlsawyer/grimoire/tree/main/examples/grim-scry).
+**Viewport is the spell.** Concepts hang first; implementers and named commands hang underneath. Inventory and lantern stay session-only.
 
 ---
 
