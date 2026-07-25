@@ -44,7 +44,7 @@ The spell is for orientation of a system in motion.
 
 ## Example: Throneroom
 
-A real repo pass on [Throneroom](/posts/throneroom/), a prime example of nested roots under one workspace:
+A real Grim Repo pass on [Throneroom](/posts/throneroom/) - a prime example of nested roots under one workspace:
 
 - `▲` commits ahead/behind configured upstream (`↑N ↓N`)
 - `▲` working-tree delta vs HEAD (`+N -N`)
