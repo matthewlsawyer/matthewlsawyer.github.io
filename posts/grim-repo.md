@@ -8,7 +8,7 @@ credit: 'Tarot images from the <a class="hover:text-stone-300" href="https://com
 
 _What lives must be named._
 
-You work across nested git roots: monorepo shell, site, dotfiles, experiments. Before you ask the agent to touch the right tree, you freeze.
+You work across nested git roots; a monorepo shell, site, dotfiles, experiments. Before you ask the agent to perform the next task, you freeze.
 
 > Have I committed all my changes? ... what did I change again?
 
