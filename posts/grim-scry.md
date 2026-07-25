@@ -6,7 +6,7 @@ published: Jul 21, 2026
 credit: 'Tarot images from the <a class="hover:text-stone-300" href="https://commons.wikimedia.org/wiki/Category:Rider-Waite_tarot_deck">Rider-Waite tarot deck</a> on Wikimedia Commons.'
 ---
 
-_You must see before you can act._
+_You must see before you act._
 
 You open a repo cold. The agent lists files, reads random READMEs, chases imports, and ten minutes later you have a paragraph summary that will not survive the next session. What you wanted was _shape_: what matters, how it is organized, what you run first.
 
@@ -85,7 +85,7 @@ Omarchy
    └─▶ omarchy update
 ```
 
-Full example run found in [examples/grim-scry/omarchy.md](https://github.com/matthewlsawyer/grimoire/blob/main/examples/grim-scry/omarchy.md).
+Full example run found in [examples/grim-scry/omarchy](https://github.com/matthewlsawyer/grimoire/blob/main/examples/grim-scry/omarchy.md).
 
 ---
 
@@ -100,8 +100,8 @@ Given a repository or workspace, `grim-scry` distills meaning and emits one at-a
 3. **Read only those seeds; distill for salience** - annotate purpose only when docs named it.
 4. **Emit** - Scry Lantern (one tree: concepts, paths, commands), then a summary and observations.
 
-**Viewport is the spell.** Concepts hang first; implementers and named commands hang underneath. Inventory and lantern stay session-only.
+_The viewport is the spell._ Concepts hang first; implementers and named commands hang underneath. Lantern stays session-only.
 
 ---
 
-Cast the lantern. Read the shape. Then decide what work comes next.
+Cast the lantern. Read the shape. Then decide what comes next.
