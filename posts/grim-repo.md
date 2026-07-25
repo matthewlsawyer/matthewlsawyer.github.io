@@ -8,11 +8,11 @@ credit: 'Tarot images from the <a class="hover:text-stone-300" href="https://com
 
 _What lives must be named._
 
-You work across nested git roots; a monorepo shell, site, dotfiles, experiments. Before you ask the agent to perform the next task, you freeze.
+You work across nested git roots; a monorepo shell, site, dotfiles, experiments, etc. Before you ask the agent to perform the next task, you stop yourself.
 
 > Have I committed all my changes? ... what did I change again?
 
-You need a _ledger_ that shows you: which roots exist, which branches, how dirty the working tree is, how far you are from upstream. One ledger the agent can reason over.
+You need a _census_ that shows you which roots exist, which branches, how dirty the working tree is, and how far you are from upstream. One census the agent can reason over.
 
 **Grim Repo** is the second spell in [Grimoire](https://github.com/matthewlsawyer/grimoire): deterministic discovery -> a live viewport injected into session. `/grim-repo` puts repo state where you (and the agent) can use it.
 
@@ -85,7 +85,7 @@ Full example run found in [examples/grim-repo/throneroom](https://github.com/mat
 
 ## What the spell does
 
-`/grim-repo` is not a substitute for `git status`. It is the ledger you want in the conversation: at-a-glance repo facts plus agent context for the next question.
+`/grim-repo` is not a substitute for `git status`. It is the census you want in the conversation: at-a-glance repo facts plus agent context for the next question.
 
 Given a workspace, `grim-repo` finds every nested git root and emits one status tree in chat:
 
