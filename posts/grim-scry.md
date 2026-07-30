@@ -8,9 +8,11 @@ credit: 'Tarot images from the <a class="hover:text-stone-300" href="https://com
 
 _You must see before you act._
 
-You open a repo cold. The agent lists files, reads random READMEs, chases imports, and ten minutes later you have a paragraph summary that will not survive the next session. What you wanted was _shape_: what matters, how it is organized, what you run first.
+You open a repo cold. The agent lists files, reads random READMEs, chases imports, and ten minutes later you have a paragraph summary that will not survive the next session. What you need is _shape_; what matters, how it is organized, what you run first.
 
-**Grim Scry** is the first spell in [Grimoire](https://github.com/matthewlsawyer/grimoire): a spellbook of small agent skills. `/grim-scry` reveals project meaning as one at-a-glance Scry Lantern.
+---
+
+**Grim Scry** is the first spell in [Grimoire](https://github.com/matthewlsawyer/grimoire). `/grim-scry` reveals project meaning as one at-a-glance Scry Lantern.
 
 ## The Hermit
 
@@ -32,82 +34,66 @@ The spell is for orientation, not omniscience. That restraint is the point.
 
 ---
 
-## Example: Omarchy
+## Example: omarchy
 
-A real scry of [omarchy](https://github.com/basecamp/omarchy) that includes:
+A Grim Scry run on [omarchy](https://github.com/basecamp/omarchy) that includes:
 
-- Hierarchical structure of main concepts
+- `≣` concept trunks
 - `ⓘ` annotation branches
-- `─▶` invocation branches
+- `▶` invocation branches
+
+**Command:** `/grim-scry https://github.com/basecamp/omarchy`
 
 ```text
-Omarchy
-├─ⓘ Arch + Hyprland distro; runtime via $OMARCHY_PATH (uwsm session)
+omarchy/
+├─ⓘ Beautiful, modern Linux distro (DHH / Basecamp); MIT; omarchy.org
 ╞══════════════════◆
-├─ CLI
-│  ├─ bin/omarchy
-│  │  └─ⓘ Routes omarchy-*; GROUP_DESCRIPTIONS is authoritative
-│  ├─ bin/
-│  │  └─ⓘ # omarchy: metadata in first 80 lines (group, summary, args, ...)
-│  └─▶ omarchy commands
-│     └─ⓘ Discovery for users and agents
 │
-├─ Omarchy shell
-│  ├─ shell/
-│  │  ├─ shell.qml
-│  │  ├─ services/
-│  │  │  ├─ PluginRegistry.qml
-│  │  │  └─ BarWidgetRegistry.qml
-│  │  └─ plugins/
-│  │     ├─ bar/
-│  │     ├─ panels/
-│  │     ├─ menu/
-│  │     └─ ...
-│  ├─ⓘ One Quickshell process per session; Hyprland autostart quickshell -p
-│  ├─▶ omarchy-shell shell ping
+├─≣ Stack
+│  ├─ Arch Linux + Hyprland (Wayland WM)
+│  ├─ Omarchy shell (single Quickshell host: bar, panels, overlays, services)
+│  └─ `$OMARCHY_PATH` runtime root (uwsm session)
+│
+├─≣ CLI
+│  ├─▶ omarchy
+│  │  └─ⓘ Dispatches `omarchy-*` in `bin/`; metadata in first 80 lines; groups in `GROUP_DESCRIPTIONS`
+│  ├─▶ omarchy commands
+│  ├─▶ omarchy update
+│  ├─▶ omarchy refresh-config <path>
 │  ├─▶ omarchy-restart-shell
-│  └─▶ omarchy plugin add | update | clone
+│  └─▶ omarchy-shell shell ping
 │
-├─ Bar & widgets
-│  ├─ shell/plugins/bar/
-│  ├─ shell/plugins/panels/
-│  │  └─ tailscale/
-│  │     └─ⓘ omarchy.tailscale bar-widget + panel
-│  └─▶ omarchy bar plugin add
+├─≣ Install & ship
+│  ├─ install/ (sourced leaves; ISO orchestrates via omarchy-setup-system)
+│  ├─ config/ -> `~/.config/` defaults
+│  ├─ themes/*/colors.toml + default/themed/*.tpl
+│  ├─ migrations/ (per-user via omarchy-migrate)
+│  └─▶ omarchy-setup-system / omarchy-finalize-user / omarchy-reinstall-configs
 │
-├─ Config & themes
-│  ├─ config/
-│  │  └─ⓘ Defaults copied to ~/.config/
-│  ├─ default/themed/*.tpl
-│  ├─ themes/*/colors.toml
-│  └─▶ omarchy-refresh-config
+├─≣ Omarchy shell
+│  ├─ shell/shell.qml + services/PluginRegistry.qml
+│  ├─ shell/plugins/ (first-party; manifest.json contract)
+│  ├─ `~/.config/omarchy/shell.json` (layout + plugins; no deep-merge once customized)
+│  ├─▶ omarchy plugin add|update|remove|clone|rescan
+│  ├─▶ omarchy bar plugin add|move|remove|set
+│  └─▶ omarchy restart shell
 │
-├─ Install & upgrade
-│  ├─ install/
-│  ├─▶ omarchy-setup-system
-│  ├─▶ omarchy-setup-hardware
-│  ├─▶ omarchy-finalize-user
-│  └─▶ omarchy-upgrade-to-quattro
-│
-├─ Migrations
-│  ├─ migrations/
-│  └─▶ omarchy-migrate
-│
-├─ Quality
+├─≣ Quality
 │  ├─▶ ./test/all
 │  ├─▶ ./test/cli
-│  └─▶ ./test/shell
+│  ├─▶ ./test/shell
+│  └─ⓘ Graphical acceptance via sibling omarchy-iso VM harness
 │
-├─ End-user skill
+├─≣ End-user agents
 │  └─ default/omarchy-skill/SKILL.md
-│     └─ⓘ ~/.config customization; not source dev
+│     └─ⓘ Customize `~/.config/` only; never edit `/usr/share/omarchy/`
 │
-└─ Guidance
+└─≣ Guidance
    └─ AGENTS.md
-      └─ⓘ Bash style, helpers, shell IPC, acceptance via omarchy-iso
+      └─ⓘ Bash style, helpers (pkg/cmd/hw), pkexec for privileged prompts, visual verify flows
 ```
 
-Full example run found in [examples/grim-scry/omarchy](https://github.com/matthewlsawyer/grimoire/blob/main/examples/grim-scry/omarchy.md).
+Other example runs found [here](https://github.com/matthewlsawyer/grimoire/blob/main/examples/).
 
 ---
 
@@ -118,11 +104,11 @@ Scry is not a replacement for reading code when you are about to change behavior
 Given a repository or workspace, `grim-scry` distills meaning and emits one at-a-glance Scry Lantern in chat:
 
 1. **Resolve the target** - repo or workspace path.
-2. **Discover a closed seed set** - session-only, via deterministic listing (`discover.py` in Grimoire).
+2. **Discover a closed seed set** - session-only, via `discover.py` (default budget 50).
 3. **Read only those seeds; distill for salience** - annotate purpose only when docs named it.
-4. **Emit** - Scry Lantern (one tree: concepts, paths, commands), then a summary and observations.
+4. **Emit** - `# Grim Scry: <project>`, one-line hook, Scry Lantern fence, `# Summary`, then `Observations:` (up to three bullets).
 
-_The viewport is the spell._ Concepts hang first; implementers and named commands hang underneath. Lantern stays session-only.
+_The lantern is the spell._ The viewport merely captures it. Concepts hang first; implementers and named commands hang underneath. Lantern stays session-only.
 
 ---
 
