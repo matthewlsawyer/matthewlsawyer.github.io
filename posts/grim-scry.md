@@ -12,7 +12,9 @@ You open a repo cold. The agent lists files, reads random READMEs, chases import
 
 ---
 
-**Grim Scry** is the first spell in [Grimoire](https://github.com/matthewlsawyer/grimoire). `/grim-scry` reveals project meaning as one at-a-glance Scry Lantern.
+**Grim Scry** is the first spell in [Grimoire](/page/grimoire/).
+
+`/grim-scry` reveals project meaning as one at-a-glance Scry Lantern.
 
 ## The Hermit
 

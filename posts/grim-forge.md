@@ -12,7 +12,9 @@ You ship in bursts. Commits pile up. The agent summarizes what changed, and the 
 
 ---
 
-**Grim Forge** is the third spell in [Grimoire](https://github.com/matthewlsawyer/grimoire). `/grim-forge` bootstraps or updates `CHANGELOG.md` and `HISTORY.md` per git root, then emits one at-a-glance ledger viewport.
+**Grim Forge** is the third spell in [Grimoire](/page/grimoire/).
+
+`/grim-forge` bootstraps or updates `CHANGELOG.md` and `HISTORY.md` per git root, then emits one at-a-glance ledger viewport.
 
 ## The Craftsman
 
@@ -65,8 +67,15 @@ buildawesome/
 │  │  └─ ### Fixed
 │  │     └─ Issue #4325 (84654019)
 │  ├─ ## [4.0.0-alpha.10]
+│  ├─ ## [4.0.0-alpha.9]
+│  ├─ ## [4.0.0-alpha.8]
+│  ├─ ## [4.0.0-alpha.1]
 │  ├─ ## [3.1.6]
-│  └─ ## [1.0.0]
+│  ├─ ## [3.0.0]
+│  ├─ ## [2.0.0]
+│  ├─ ## [1.0.0]
+│  ├─ ## [0.11.0]
+│  └─ ## [0.1.0]
 │
 └─ HISTORY.md
    ├─ marker: none -> 17210371
@@ -76,6 +85,8 @@ buildawesome/
       ├─ ### 2026-07-01
       └─ ### 2017-11-26
 ```
+
+CHANGELOG.md and HISTORY.md not captured in this example.
 
 Other example runs found [here](https://github.com/matthewlsawyer/grimoire/blob/main/examples/).
 

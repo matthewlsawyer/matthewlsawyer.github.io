@@ -16,7 +16,9 @@ You need a _census_ that shows you which roots exist, which branches, how dirty 
 
 ---
 
-**Grim Repo** is the second spell in [Grimoire](https://github.com/matthewlsawyer/grimoire): deterministic discovery -> a live viewport injected into session. `/grim-repo` puts repo state where you (and the agent) can use it.
+**Grim Repo** is the second spell in [Grimoire](/page/grimoire/).
+
+Deterministic discovery -> a live viewport injected into session. `/grim-repo` puts repo state where you (and the agent) can use it.
 
 ## Death
 
