@@ -42,7 +42,7 @@ That lifecycle is the signal Grim Repo surfaces:
 - `+N -N` diffs against HEAD
 - `●` current branch per repo
 
-The spell is for orientation of a system in motion.
+The spell is for orientation of a system in motion. Use it to choose where to work, what is out of sync, and what changed since you last looked.
 
 ---
 
@@ -98,9 +98,9 @@ Given a workspace, `grim-repo` finds every nested git root and emits one status 
 
 1. **Resolve the target** - workspace root or named path.
 2. **Discover roots** - deterministic find under the target (`census.py`).
-3. **Emit the board** - fence full `census.py` stdout (branch, working-tree delta, upstream sync per root). Do not redraw.
+3. **Emit the board** - `census.py` stdout to the viewport.
 
-_The census is the spell._ The viewport merely captures it. Use it to choose where to work, what is out of sync, and what changed since you last looked.
+_The census is the spell._ The viewport merely captures it.
 
 ---
 

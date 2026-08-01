@@ -106,11 +106,11 @@ Scry is not a replacement for reading code when you are about to change behavior
 Given a repository or workspace, `grim-scry` distills meaning and emits one at-a-glance Scry Lantern in chat:
 
 1. **Resolve the target** - repo or workspace path.
-2. **Discover a closed seed set** - session-only, via `discover.py` (default budget 50).
-3. **Read only those seeds; distill for salience** - annotate purpose only when docs named it.
-4. **Emit** - `# Grim Scry: <project>`, one-line hook, Scry Lantern fence, `# Summary`, then `Observations:` (up to three bullets).
+2. **Discover a seed set** via `discover.py`.
+3. **Distill for salience**. Distill concepts, structure, and commands from the read.
+4. **Emit a report** (lantern) to the viewport.
 
-_The lantern is the spell._ The viewport merely captures it. Concepts hang first; implementers and named commands hang underneath. Lantern stays session-only.
+_The lantern is the spell._ The viewport merely captures it.
 
 ---
 
