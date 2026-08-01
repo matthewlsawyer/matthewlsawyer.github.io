@@ -80,15 +80,13 @@ Other example runs found [here](https://github.com/matthewlsawyer/grimoire/blob/
 
 ## What the spell does
 
-Forge is not a substitute for cutting releases yourself. It is the ledger pair: _what changed_ in the changelog, _provenance_ in the history.
-
-Given a git repository, `grim-forge` collects bounded evidence and writes durable artifacts at `repo_root`:
+Forge is not a substitute for maintaining a changelog, it is a historical ledger that captures the story arc of your project:
 
 1. **Resolve the target** - workspace root or named path.
 2. **Distill history**. Walk the git log and hunt for documentation to support the narrative.
 3. **Emit artifacts and report**. Write the `HISTORY.md` artifact and emit a ledger in the viewport.
 
-_Provenance is the spell._ The viewport merely captures it.
+_History is the spell._ The viewport merely captures it.
 
 ---
 
