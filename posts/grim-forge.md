@@ -44,6 +44,8 @@ A Grim Forge genesis run on [buildawesome](https://github.com/11ty/buildawesome)
 
 **Command:** `/grim-forge`
 
+### Viewport
+
 ```text
 buildawesome/HISTORY.md
 ╞══════════════════◆
@@ -72,7 +74,17 @@ buildawesome/HISTORY.md
    └─ Genesis — Jekyll-alternative SSG in JavaScript.
 ```
 
-The `HISTORY.md` artifact is not captured in this example.
+### HISTORY.md
+
+An excerpt from the `HISTORY.md` artifact created during this run.
+
+````text
+Zach Leatherman started Eleventy in late 2017 as a simpler static site 
+generator in JavaScript (`00ad9192`). Within weeks it gained subfolder 
+templates, CLI flags, and a pivotal December refactor that introduced 
+asynchronous template rendering and Liquid support (`c14f1fa8`) — the 
+architectural shape that would carry through every later version.
+````
 
 Other example runs found [here](https://github.com/matthewlsawyer/grimoire/blob/main/examples/).
 
