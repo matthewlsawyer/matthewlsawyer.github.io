@@ -52,7 +52,7 @@ Grim Notes is intentionally modest. It's a place to capture, file, and organize 
 
 A Grim Notes capture and status run on a local [Throneroom](/posts/throneroom/) workspace.
 
-**Command:** `/grim-notes todo I need to clean up the throneroom hand copy...`
+**Command:** `/grim-notes noticed that throneroom flavor text leaked down into grimoire project skill - todo clean that up`
 
 ### Capture
 
@@ -62,6 +62,7 @@ notes/
 │
 └─≣ 2026-08.md
    └─≣ 2026-08-02
+      ├─▲ +1 note
       └─▲ +1 todo
 ```
 
@@ -74,21 +75,24 @@ notes/
 ╞══════════════════◆
 │
 └─≣ 2026-08.md
-   └─● 2 todos
+   ├─● 1 note
+   └─● 1 todo
 ```
 
 ### notes/2026-08.md
 
-An excerpt from the notes file after two capture runs.
+An excerpt from the notes file after the capture.
 
 ````text
 # 2026-08
 
 ## 2026-08-02
 
+### Notes
+- noticed that throneroom flavor text leaked down into grimoire project skill
+
 ### Todos
-- [ ] clean up the throneroom hand copy to prevent flavor bleeding into projects
-- [ ] think about dropping glass garden, or put on backburner for now
+- [ ] clean that up (throneroom flavor text in grimoire project skill)
 ````
 
 Other example runs found [here](https://github.com/matthewlsawyer/grimoire/blob/main/examples/).
