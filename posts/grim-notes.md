@@ -79,11 +79,9 @@ notes/
    └─● 1 todo
 ```
 
-### notes/2026-08.md
+The notes file after the capture.
 
-An excerpt from the notes file after the capture.
-
-````text
+```markdown
 # 2026-08
 
 ## 2026-08-02
@@ -93,7 +91,7 @@ An excerpt from the notes file after the capture.
 
 ### Todos
 - [ ] clean that up (throneroom flavor text in grimoire project skill)
-````
+```
 
 Other example runs found [here](https://github.com/matthewlsawyer/grimoire/blob/main/examples/).
 
