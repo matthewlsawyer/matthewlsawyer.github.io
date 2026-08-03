@@ -46,44 +46,27 @@ A Grim Forge genesis run on [buildawesome](https://github.com/11ty/buildawesome)
 
 ### Viewport
 
+An excerpt of the output to the viewport.
+
 ```text
 buildawesome/HISTORY.md
 ╞══════════════════◆
 │
-├─≣ 2026-07-31
-│  └─ First grim-forge run; ledger created from ~3,700 commits.
 ├─≣ 2026-07-27
-│  └─ Dependency upgrades, BuildAwesome export, fix #4325 on alpha.10.
-├─≣ 2026-07-01
-│  └─ v4.0.0-alpha.10; repo pointers to 11ty/buildawesome.
-├─≣ 2026-06-09 -> 2026-06-11
-│  └─ Build Awesome alias layer and packages/build-awesome workspace.
-├─≣ 2026-06-05
-│  └─ packages/client renamed to packages/browser.
-├─≣ 2026-06-17 -> 2026-06-30
-│  └─ Alpha.8–10 arc: dual release tags, async Nunjucks bundle plugin.
-├─≣ 2025-07-30
-│  └─ v4.0.0-alpha.1 — ESM-first major, @11ty/client browser package.
-├─≣ 2024-10-01
-│  └─ v3.0.0 third major release.
-├─≣ 2023-02-08
-│  └─ v2.0.0 second major release.
-├─≣ 2022-01-08
-│  └─ v1.0.0 first stable semver.
-└─≣ 2017-11-26
-   └─ Genesis — Jekyll-alternative SSG in JavaScript.
+│  └─ v4 alpha polish: named export, fixes, dependency bumps.
+├─ ...
+└─≣ 2018-08-14
+   └─ v0.5.1 caps year one; core SSG foundation in place.
 ```
 
 ### HISTORY.md
 
 An excerpt from the `HISTORY.md` artifact created during this run.
 
-````text
-Zach Leatherman started Eleventy in late 2017 as a simpler static site 
-generator in JavaScript (`00ad9192`). Within weeks it gained subfolder 
-templates, CLI flags, and a pivotal December refactor that introduced 
-asynchronous template rendering and Liquid support (`c14f1fa8`) — the 
-architectural shape that would carry through every later version.
+````markdown
+### Origins
+
+Zach Leatherman started the project in November 2017 as a minimal static site generator (`00ad9192`). Within days it gained subfolder templates, CLI flags, and underscore-prefixed file ignores. By early December the name settled on **Eleventy** (`d041111c`), async rendering landed (`c14f1fa8`), and Liquid became the default data engine. Pagination, the `_data` directory, and multi-engine support (Nunjucks, Handlebars, Pug, EJS, Markdown) followed in rapid succession through 2017–2018, establishing the Jekyll-inspired mental model that would define the project.
 ````
 
 Other example runs found [here](https://github.com/matthewlsawyer/grimoire/blob/main/examples/).
