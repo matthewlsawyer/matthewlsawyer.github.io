@@ -16,7 +16,7 @@ You pop open your `notes.md` file to add a reminder to yourself. You pause.
 
 > This file is a mess.
 
-You don't have time to clean it up so you shake your head, jot down a new line, and move on. What you need is a _helper_.
+You don't have time to clean it up so you shake your head, jot down a new line, and move on. What you need is an _apprentice_.
 
 ---
 
@@ -108,7 +108,7 @@ Given a prompt or a bare cast, `grim-notes` organizes and emits one at-a-glance 
 3. **Append the ledger** - create or extend `notes/YYYY-MM.md` under today's day.
 4. **Emit a report** - delta or status viewport.
 
-_Filing is the spell._ The viewport merely captures it.
+_Note-taking is the spell._ The viewport merely captures it.
 
 ---
 
