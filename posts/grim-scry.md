@@ -1,5 +1,5 @@
 ---
-layout: post_layout.md
+layout: post_layout.liquid
 title: Grim Scry
 date: 2026-07-21T12:00:00
 published: Jul 21, 2026

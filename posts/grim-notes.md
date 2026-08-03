@@ -1,5 +1,5 @@
 ---
-layout: post_layout.md
+layout: post_layout.liquid
 title: Grim Notes
 date: 2026-08-02T12:00:00
 published: Aug 2, 2026

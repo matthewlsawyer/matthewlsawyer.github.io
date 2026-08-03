@@ -1,5 +1,5 @@
 ---
-layout: post_layout.md
+layout: post_layout.liquid
 title: Grim Forge
 date: 2026-07-30T12:00:00
 published: Jul 30, 2026

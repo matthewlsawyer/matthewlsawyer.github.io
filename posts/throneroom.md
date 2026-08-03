@@ -1,5 +1,5 @@
 ---
-layout: post_layout.md
+layout: post_layout.liquid
 title: Throneroom
 date: 2026-07-18T20:00:00
 published: Jul 18, 2026

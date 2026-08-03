@@ -1,5 +1,5 @@
 ---
-layout: post_layout.md
+layout: post_layout.liquid
 title: Grim Repo
 date: 2026-07-24T18:00:00
 published: Jul 24, 2026

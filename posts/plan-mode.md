@@ -1,5 +1,5 @@
 ---
-layout: post_layout.md
+layout: post_layout.liquid
 title: Plan Mode
 date: 2026-07-22T16:50:00
 published: Jul 22, 2026
